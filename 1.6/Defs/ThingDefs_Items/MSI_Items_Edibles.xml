@@ -93,7 +93,7 @@
 
   <!--========== Hemp Protein ==========-->
   
-  <ThingDef ParentName="MSI_PlantFoodRawBase">
+  <ThingDef ParentName="MSI_MeatSubstituteFoodBase">
     <defName>HempProtein</defName>
     <label>hemp Protein</label>
     <description>A protein powder made from crushed smokeleaf seeds. Can be used as an alternative protein source when cooking.</description>
@@ -102,19 +102,16 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <soundInteract>Standard_Drop</soundInteract>
-      <soundDrop>Standard_Drop</soundDrop>
+    <soundDrop>Standard_Drop</soundDrop>
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
       <MarketValue>2.2</MarketValue>
       <Flammability>0.5</Flammability>
       <Mass>0.15</Mass>
+      <Nutrition>0.05</Nutrition>
     </statBases>
-    <ingestible>
-      <foodType>Processed</foodType>
-      <ingestSound>Meal_Eat</ingestSound>
-    </ingestible>
     <thingCategories>
-      <li>MeatRaw</li>
+      <li>MeatSubstitute</li>
     </thingCategories>
   </ThingDef>
 

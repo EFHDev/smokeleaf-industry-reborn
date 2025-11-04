@@ -46,6 +46,20 @@
 		<socialPropernessMatters>true</socialPropernessMatters>
   	</ThingDef>
 
+	<ThingDef Abstract="True" Name="MSI_MeatSubstituteFoodBase" ParentName="MSI_OrganicProductBase">
+		<ingestible>
+			<foodType>Meat</foodType>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>RawVegetable_Eat</ingestSound>
+			<tasteThought>AteRawFood</tasteThought>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+			<ingestCommandString>Consume {0}</ingestCommandString>
+			<ingestReportString>Consuming {0}.</ingestReportString>
+			<preferability>NeverForNutrition</preferability>
+		</ingestible>
+		<socialPropernessMatters>true</socialPropernessMatters>
+  	</ThingDef>
+
   <!--========== Edibles Base ==========-->
 	
   	<ThingDef Name="MSI_MealBase" Abstract="True">
